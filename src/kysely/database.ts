@@ -3,7 +3,7 @@ import { FileMigrationProvider, Kysely, Migrator, SqliteDialect } from 'kysely';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import url from 'node:url';
-import { Database } from './types.js'; // this is the Database interface we defined earlier
+import { Database } from './types.js';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const dialect = new SqliteDialect({

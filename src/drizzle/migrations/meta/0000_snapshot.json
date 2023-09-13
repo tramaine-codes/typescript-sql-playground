@@ -1,0 +1,55 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "id": "d5ea2110-5c49-4a57-a087-cc2425c05774",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "pets": {
+      "name": "pets",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "species": {
+          "name": "species",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "pets_id_unique": {
+          "name": "pets_id_unique",
+          "columns": ["id"],
+          "isUnique": true
+        },
+        "name_index": {
+          "name": "name_index",
+          "columns": ["name"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
