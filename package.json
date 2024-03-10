@@ -52,8 +52,8 @@
   "dependencies": {
     "@prisma/client": "5.10.2",
     "better-sqlite3": "9.4.3",
-    "drizzle-orm": "0.29.5",
-    "kysely": "0.27.2",
+    "drizzle-orm": "0.30.1",
+    "kysely": "0.27.3",
     "sequelize": "6.37.1",
     "sqlite3": "5.1.7"
   }
