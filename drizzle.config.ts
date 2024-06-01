@@ -4,7 +4,7 @@ export default defineConfig({
   dbCredentials: {
     url: ':memory:',
   },
-  driver: 'better-sqlite',
+  dialect: 'sqlite',
   out: './src/drizzle/migrations',
   schema: './src/drizzle/schema.ts',
   strict: true,

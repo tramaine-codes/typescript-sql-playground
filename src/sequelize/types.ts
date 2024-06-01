@@ -1,8 +1,8 @@
 import {
-  CreationOptional,
-  InferAttributes,
-  InferCreationAttributes,
   Model,
+  type CreationOptional,
+  type InferAttributes,
+  type InferCreationAttributes,
 } from 'sequelize';
 
 export class Pet extends Model<
