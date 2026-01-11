@@ -3,7 +3,8 @@ import { PrismaClient } from '@prisma/client';
 import 'dotenv/config';
 
 const adapter = new PrismaBetterSqlite3({
-  url: `${process.env['DATABASE_URL']}`,
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  url: process.env['DATABASE_URL']!,
 });
 const prisma = new PrismaClient({ adapter });
 
