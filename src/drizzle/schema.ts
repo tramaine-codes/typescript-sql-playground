@@ -9,7 +9,5 @@ export const pets = sqliteTable(
     name: text('name').notNull(),
     species: text('species').$type<'cat' | 'dog'>().notNull(),
   },
-  (table) => ({
-    idx1: index('name_index').on(table.name),
-  })
+  (table) => [index('name_index').on(table.name)]
 );
